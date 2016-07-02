@@ -20,6 +20,12 @@ management:
   security:
     enabled: false
 
+zuul:
+  routes:
+    fortunes:
+      path: /special/**
+      serviceId: fortunes
+
 ---
 
 spring:
